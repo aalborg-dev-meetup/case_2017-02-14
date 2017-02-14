@@ -1,0 +1,31 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "standard",
+        "standard-react"
+    ],
+    "plugins": [
+        "babel",
+        "react",
+        "promise"
+    ],
+    "env": {
+        "browser" : true
+    },
+    "rules": {
+        "no-tabs": 0,
+        "space-before-function-paren": [2, {"anonymous": "always", "named": "never"}],
+        "semi" : [2, "never"],
+        "generator-star-spacing": 0,
+        "babel/generator-star-spacing": 1,
+        "jsx-quotes": [2, "prefer-single"],
+        "react/jsx-indent": [2, "tab"],
+        "react/jsx-indent-props": [2, "tab"],
+        "react/jsx-no-bind": [2, {
+            "ignoreRefs": false,
+            "allowArrowFunctions": true,
+            "allowBind": false
+        }],
+        "indent": [2, "tab"],
+    }
+}
